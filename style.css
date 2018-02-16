@@ -1,4 +1,38 @@
-body
+.panel-heading{
+  padding: 60px;
+  font-size: 18px;
+}
+.panel-heading a{
+  text-decoration: none;
+
+}
+.panel-heading a.hover{
+  color: #0faf8d;
+}
+.panel-heading a.active{
+  color: #0faf8d;
+}
+.form-control{
+  height: 55px;
+  margin: 10px;
+}
+div hr{
+  background-image: -webkit-linear-gradient(left,rgba(0,0,0,0),rgba(0, 0, 0, 0),rgba);
+  clear: both;
+  margin-top: 60px;
+  margin-bottom: 0px;
+  height: 1px;
+}
+.panel
 {
-  background: lightblue;
+  border: 1px soild rgba(207,201,201);
+  box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.2);
+  margin-top: 25%;
+}
+.btn{
+  width: 40%;
+  height: 49px;
+  color: #fff;
+  font: 15px;
+  background-color: #0faf8d
 }
