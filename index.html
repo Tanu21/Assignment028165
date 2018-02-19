@@ -3,23 +3,18 @@
   <head>
     <meta charset="utf-8">
     <title>Login/Register</title>
-
-
-
     <script type="text/javascript" src="javascripst1.js"></script>
     <link href="style.css" rel="stylesheet" type="text/css">
-    <script type="text/javascript" src="js\bootstrap.js"></script>
-
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
     </script>
+    <script type="text/javascript" src="js\bootstrap.js"></script>
     <script src="js/bootstrap.min.js"></script>
   </head>
   <body>
     <div class="container">
-
 
       <div class="col-lg-6 col-md-offset-3">
         <div class="panel">
@@ -48,7 +43,7 @@
               </label>
             </div>
             <br>
-            <button type="submit"  onclick="Loginbtn">Login</button>
+            <button type="submit"  onclick="Loginbtn()">Login</button>
             <br><br>
             <a href="#" style="margin-top:20px;color:black">Forget Password?</a>
           </div>
@@ -70,7 +65,7 @@
             </div>
             <div class="col-lg-12" align="center">
 
-            <button type="submit" class="btn">Register</button>
+            <button type="submit" class="btn" onsubmit="Loginbtn();">Register</button>
           </div>
           </form>
         </div>
@@ -80,6 +75,8 @@
   <script>
   function Loginbtn()
   {
+
+    //window.alert("login successfull");
     var user = document.getElementById('username');
     var pass = document.getElementById('password');
 
@@ -90,17 +87,19 @@
     {
       if(pass.value == pass1)
       {
-        window.alert("Login Successfull" + user.value);
-        window.open("http://www.google.com");
+        window.alert("Login Successfull");
+         window.location = "dashboard.html";
+      //  window.open("http://www.google.com");
       }
       else {
         {
           window.alert("incorrect user name and password");
         }
-      }
-    }
+     }
+     }
   }
 </script>
+
   <script>
 $(function(){
 $('#log_link').click(function(e){
