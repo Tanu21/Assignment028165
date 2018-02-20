@@ -31,6 +31,13 @@ div hr{
   box-shadow: 0px 0px 44px 0px rgba(0, 0, 0, 0.2);
   margin-top: 25%;
 }
+
+.location
+
+  {
+    margin-top: 25%;
+  }
+
 .btn{
   width: 40%;
   height: 49px;
@@ -38,3 +45,7 @@ div hr{
   font: 15px;
   background-color: #0faf8d;
 }
+ .headings
+ {
+   margin: 30px;
+ }
